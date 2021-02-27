@@ -1,0 +1,141 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
+         url('fonts/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cormorant_infantregular';
+    src: url('fonts/cormorantinfant-regular-webfont.woff2') format('woff2'),
+         url('fonts/cormorantinfant-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    background-color: #f6efef;
+    font-size: 18px;
+}
+
+body {
+    font-family: "cormorant_infantregular";
+    line-height: 1.5rem;
+}
+
+header {
+    font-family: "quicksandregular";
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+section h2 + p {
+    text-indent: 20px;
+}
+
+a[href*="http"] {
+  background: url('external-link-52.png') no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+}
+
+a:link {
+    color: #a66;
+}
+
+a:visited {
+    color: #522d2d;
+}
+
+a:focus {
+    color: #000000;
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:active {
+    color: red;
+    text-shadow: 0px 0px 1px black;
+}
+
+ol, ul, p {
+    margin: 1em 0;
+}
+
+li, p {
+    line-height: 1.5rem;
+}
+
+ul li {
+    list-style-type: disc;
+}
+
+/* make nav look like vertical buttons */
+nav li {
+    list-style-type: none;
+    border: 1px solid #a66;
+    padding: 1.5rem;
+    margin: 1.9rem 0;
+    font-weight: bold;
+    text-align: center;
+}

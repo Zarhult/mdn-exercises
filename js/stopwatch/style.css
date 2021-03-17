@@ -1,0 +1,14 @@
+.stopwatch {
+    font-family: sans-serif;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-size: 2rem;
+}
